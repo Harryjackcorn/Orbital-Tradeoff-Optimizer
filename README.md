@@ -14,13 +14,13 @@ This project models that dynamic and finds the "sweet spot" that guarantees a 5 
 
 ## How it Works:
 
-## Live Orbital Readings: The code connects to CelesTrak using the "skyfield" library in order to pull real-time NORAD orbital elements for active space stations like the ISS and CSS Tiangong.
+Live Orbital Readings: The code connects to CelesTrak using the "skyfield" library in order to pull real-time NORAD orbital elements for active space stations like the ISS and CSS Tiangong.
 
-## Conjunction Detection: Builds 3d coordinates (x,y,z) minute by minute across a 1440 minutes (24 hours) to find the minimum Euclidean distance between the satellites.
+Conjunction Detection: Builds 3d coordinates (x,y,z) minute by minute across a 1440 minutes (24 hours) to find the minimum Euclidean distance between the satellites.
 
-## Burn vs. Uncertainty Optimization: Evaluates the maneuver lead times from 10 to 120 minutes prior to the closest approach. Then calculates the required Delta V to achieve a 5 kilometer distance against a linear radarexpansion model. 
+Burn vs. Uncertainty Optimization: Evaluates the maneuver lead times from 10 to 120 minutes prior to the closest approach. Then calculates the required Delta V to achieve a 5 kilometer distance against a linear radarexpansion model. 
 
-## Visualization: This program creates a plot that plots the decaying fuel curve against the rising radar error line, then identifies the minimum cost window.
+Visualization: This program creates a plot that plots the decaying fuel curve against the rising radar error line, then identifies the minimum cost window.
 
 ## Important Findings from this simulation:
 
